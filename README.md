@@ -68,7 +68,7 @@ This project reads the PDF, splits it into meaningful chunks, converts them to e
 | PyMuPDF | PDF text extraction |
 | FAISS | Vector similarity search |
 | Transformers / Sentence Transformers | Text embeddings |
-| Flask  |
+| Flask  | Backend framework for API endpoints |
 
 ---
 
