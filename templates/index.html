@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Policy QA Bot</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9f9fb;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            max-width: 700px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input[type="text"] {
+            padding: 14px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        button {
+            background-color: #0066cc;
+            color: white;
+            padding: 14px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #004d99;
+        }
+
+        .response {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f3f6fa;
+            border-left: 4px solid #0066cc;
+            border-radius: 6px;
+        }
+
+        .response p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Policy Question Answering Bot</h1>
+        <form method="post">
+            <input type="text" name="question" placeholder="Enter your question..." required>
+            <button type="submit">Ask</button>
+        </form>
+
+        {% if answer %}
+        <div class="response">
+            <p><strong>Question:</strong> {{ question }}</p>
+            <p><strong>Answer:</strong> {{ answer }}</p>
+            <p><strong>Context:</strong> {{ context }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
