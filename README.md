@@ -72,4 +72,35 @@ This project reads the PDF, splits it into meaningful chunks, converts them to e
 
 ---
 
+---
+
+## 🧪 Example Questions You Can Ask
+
+- “What is the waiting period for pre-existing diseases?”
+- “Is cataract surgery covered?”
+- “How much is covered under AYUSH treatment?”
+- “What are the exclusions under this policy?”
+
+---
+
+## 🛠️ Installation & Usage
+
+```bash
+# Clone the repo
+git clone https://github.com/Ashu09032005/AskYourPolicy.git
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the script
+python faisss.py
+```
+
+<img width="1597" height="805" alt="image" src="https://github.com/user-attachments/assets/a0f0c256-0c96-49a3-8b5d-040524cd2e20" />
+<img width="1498" height="806" alt="image" src="https://github.com/user-attachments/assets/31f861ac-b3b6-467d-95ac-e25dfb2a5c6a" />
+
+
+
+
+
 
