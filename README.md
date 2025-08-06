@@ -72,5 +72,4 @@ This project reads the PDF, splits it into meaningful chunks, converts them to e
 
 ---
 
-## 📂 Folder Structure
 
